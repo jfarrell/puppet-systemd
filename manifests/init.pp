@@ -2,7 +2,7 @@ class systemd {
 
   Exec {
     refreshonly => true,
-    path        => $::path,
+    path        => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:'
   }
 
   exec {
